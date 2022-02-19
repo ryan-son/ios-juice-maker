@@ -46,6 +46,7 @@ extension OrderViewController {
     }
     
     /// 선택한 쥬스 확인 알림
+    /// - message : body
     func showConfirmAlert(of message: String) {
         let alert = UIAlertController(title: "알림", message: message, preferredStyle: .alert)
         let alertAction =  UIAlertAction(title: "확인", style: .default) { _ in
@@ -56,6 +57,7 @@ extension OrderViewController {
     }
     
     /// 재고 부족 알림
+    /// - message : body
     func showConfirmCancelAlert(of message: String) {
         let alert = UIAlertController(title: "알림", message: message, preferredStyle: .alert)
         let alertAction = UIAlertAction(title: "확인", style: .default) { _ in
