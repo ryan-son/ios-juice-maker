@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		90010C7627C096A3009C6881 /* StoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90010C7527C096A3009C6881 /* StoreViewController.swift */; };
+		90010C7827C09D32009C6881 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90010C7727C09D32009C6881 /* UIViewController+Extensions.swift */; };
 		9011FBC027BBFC66002B0C57 /* JuiceMakerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9011FBBF27BBFC66002B0C57 /* JuiceMakerTests.swift */; };
 		AAED942E27BAB2BF007F2A84 /* FruitStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAED942D27BAB2BF007F2A84 /* FruitStoreTests.swift */; };
 		AAED943527BBF9CC007F2A84 /* Fruit.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAED943427BBF9CC007F2A84 /* Fruit.swift */; };
@@ -36,6 +37,7 @@
 
 /* Begin PBXFileReference section */
 		90010C7527C096A3009C6881 /* StoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreViewController.swift; sourceTree = "<group>"; };
+		90010C7727C09D32009C6881 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 		9011FBBF27BBFC66002B0C57 /* JuiceMakerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JuiceMakerTests.swift; sourceTree = "<group>"; };
 		AAED942B27BAB2BF007F2A84 /* FruitStoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FruitStoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAED942D27BAB2BF007F2A84 /* FruitStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitStoreTests.swift; sourceTree = "<group>"; };
@@ -95,6 +97,7 @@
 			children = (
 				AAED943A27BD319E007F2A84 /* Array+Extensions.swift */,
 				AAED943C27BD31A8007F2A84 /* Dictionary+Extensions.swift */,
+				90010C7727C09D32009C6881 /* UIViewController+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -276,6 +279,7 @@
 				AAED943D27BD31A8007F2A84 /* Dictionary+Extensions.swift in Sources */,
 				AAED943727BC082F007F2A84 /* Juice.swift in Sources */,
 				AAED943B27BD319E007F2A84 /* Array+Extensions.swift in Sources */,
+				90010C7827C09D32009C6881 /* UIViewController+Extensions.swift in Sources */,
 				C73DAF3B255D0CDD00020D38 /* OrderViewController.swift in Sources */,
 				C73DAF37255D0CDD00020D38 /* AppDelegate.swift in Sources */,
 				C73DAF39255D0CDD00020D38 /* SceneDelegate.swift in Sources */,

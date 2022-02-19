@@ -17,6 +17,7 @@ class OrderViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setCurrentAmount()
     }
     
     /// 주문할 쥬스 선택버튼
@@ -27,9 +28,9 @@ class OrderViewController: UIViewController {
 
         switch result {
         case .success(let juice):
-            break
-        case .failure(let notEnoughFruits):
-            break
+            self.showConfirmAlert(for: juice.description)
+        case .failure( _):
+            self.showNotEnoghAlert()
         }
     }
 }
@@ -43,4 +44,27 @@ extension OrderViewController {
         kiwiLabel.text = String(juiceMaker.count(of: .kiwi))
         mangoLabel.text = String(juiceMaker.count(of: .mango))
     }
+    
+    /// 선택한 쥬스 확인 알림
+    func showConfirmAlert(for juiceType: String) {
+        let alert = UIAlertController(title: "알림", message: "\(juiceType) 쥬스 나왔습니다.", preferredStyle: .alert)
+        let alertAction =  UIAlertAction(title: "확인", style: .default) { _ in
+            self.setCurrentAmount()
+        }
+        alert.addAction(alertAction)
+        self.present(alert, animated: false)
+    }
+    
+    /// 재고 부족 알림
+    func showNotEnoghAlert() {
+        let alert = UIAlertController(title: "알림", message: "재료가 모자라요. 재고를 수정할까요?", preferredStyle: .alert)
+        let alertAction = UIAlertAction(title: "확인", style: .default) { _ in
+            self.moveToOtherViewByModalAction(of: "StoreViewController")
+        }
+        let cancleAction = UIAlertAction(title: "취소", style: .cancel)
+        alert.addAction(alertAction)
+        alert.addAction(cancleAction)
+        self.present(alert, animated: false)
+    }
 }
+
