@@ -7,12 +7,19 @@
 import UIKit
 
 final class OrderViewController: UIViewController {
-    @IBOutlet weak var strawberryLabel: UILabel!
-    @IBOutlet weak var bananaLabel: UILabel!
-    @IBOutlet weak var pineappleLabel: UILabel!
-    @IBOutlet weak var kiwiLabel: UILabel!
-    @IBOutlet weak var mangoLabel: UILabel!
-    
+    @IBOutlet private var strawberryLabel: UILabel!
+    @IBOutlet private var bananaLabel: UILabel!
+    @IBOutlet private var pineappleLabel: UILabel!
+    @IBOutlet private var kiwiLabel: UILabel!
+    @IBOutlet private var mangoLabel: UILabel!
+    @IBOutlet private var strawberryBananaJuiceOrderButton: UIButton!
+    @IBOutlet private var mangoKiwiJuiceOrderButton: UIButton!
+    @IBOutlet private var strawberryJuiceOrderButton: UIButton!
+    @IBOutlet private var bananaJuiceOrderButton: UIButton!
+    @IBOutlet private var pineappleJuiceOrderButton: UIButton!
+    @IBOutlet private var kiwiJuiceOrderButton: UIButton!
+    @IBOutlet private var mangoJuiceOrderButton: UIButton!
+
     private let juiceMaker: JuiceMakeable = JuiceMaker()
 
     override func viewDidLoad() {
@@ -61,11 +68,13 @@ extension OrderViewController {
     func showConfirmCancelAlert(of message: String) {
         let alert = UIAlertController(title: "알림", message: message, preferredStyle: .alert)
         let alertAction = UIAlertAction(title: "확인", style: .default) { _ in
-            self.moveToOtherViewByModalAction(of: "StoreViewController")
+            self.present(identifier: "StoreViewController")
         }
         let cancleAction = UIAlertAction(title: "취소", style: .cancel)
         alert.addAction(alertAction)
         alert.addAction(cancleAction)
         self.present(alert, animated: false)
     }
+
+    
 }
