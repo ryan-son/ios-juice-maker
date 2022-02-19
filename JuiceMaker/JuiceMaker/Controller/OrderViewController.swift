@@ -28,9 +28,9 @@ class OrderViewController: UIViewController {
 
         switch result {
         case .success(let juice):
-            self.showConfirmAlert(for: juice.description)
+            self.showConfirmAlert(of: "\(juice.description) 쥬스 나왔습니다.")
         case .failure( _):
-            self.showNotEnoghAlert()
+            self.showConfirmCancelAlert(of: "재료가 모자라요. 재고를 수정할까요?")
         }
     }
 }
@@ -46,8 +46,8 @@ extension OrderViewController {
     }
     
     /// 선택한 쥬스 확인 알림
-    func showConfirmAlert(for juiceType: String) {
-        let alert = UIAlertController(title: "알림", message: "\(juiceType) 쥬스 나왔습니다.", preferredStyle: .alert)
+    func showConfirmAlert(of message: String) {
+        let alert = UIAlertController(title: "알림", message: message, preferredStyle: .alert)
         let alertAction =  UIAlertAction(title: "확인", style: .default) { _ in
             self.setCurrentAmount()
         }
@@ -56,8 +56,8 @@ extension OrderViewController {
     }
     
     /// 재고 부족 알림
-    func showNotEnoghAlert() {
-        let alert = UIAlertController(title: "알림", message: "재료가 모자라요. 재고를 수정할까요?", preferredStyle: .alert)
+    func showConfirmCancelAlert(of message: String) {
+        let alert = UIAlertController(title: "알림", message: message, preferredStyle: .alert)
         let alertAction = UIAlertAction(title: "확인", style: .default) { _ in
             self.moveToOtherViewByModalAction(of: "StoreViewController")
         }
