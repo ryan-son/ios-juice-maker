@@ -52,12 +52,12 @@ final class FruitStore: FruitStorable {
     }
     
     func setAmount(for fruit: Fruit, to amount: Int) {
-        fruits.updateValue(amount, forKey: fruit)
+        self.fruits.updateValue(amount, forKey: fruit)
     }
     
     func consume(ingredients: Fruits) {
         for (fruit, amount) in ingredients {
-            consume(fruit, amount: amount)
+            self.consume(fruit, amount: amount)
         }
     }
     

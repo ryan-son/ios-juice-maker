@@ -56,7 +56,7 @@ final class IngredientsBuilder {
     ///
     ///  - Returns: self
     func with(ingredient: Fruit, amount: Int) -> IngredientsBuilder {
-        ingredients.updateValue(amount, forKey: ingredient)
+        self.ingredients.updateValue(amount, forKey: ingredient)
         return self
     }
 }

@@ -6,15 +6,15 @@
 
 import UIKit
 
-class OrderViewController: UIViewController {
+final class OrderViewController: UIViewController {
     @IBOutlet weak var strawberryLabel: UILabel!
     @IBOutlet weak var bananaLabel: UILabel!
     @IBOutlet weak var pineappleLabel: UILabel!
     @IBOutlet weak var kiwiLabel: UILabel!
     @IBOutlet weak var mangoLabel: UILabel!
     
-    let juiceMaker = JuiceMaker()
-    
+    private let juiceMaker: JuiceMakeable = JuiceMaker()
+
     override func viewDidLoad() {
         super.viewDidLoad()
         setCurrentAmount()
@@ -38,11 +38,11 @@ class OrderViewController: UIViewController {
 extension OrderViewController {
     /// 현재 재고량
     private func setCurrentAmount() {
-        strawberryLabel.text = String(juiceMaker.count(of: .strawberry))
-        bananaLabel.text = String(juiceMaker.count(of: .banana))
-        pineappleLabel.text = String(juiceMaker.count(of: .pineapple))
-        kiwiLabel.text = String(juiceMaker.count(of: .kiwi))
-        mangoLabel.text = String(juiceMaker.count(of: .mango))
+        self.strawberryLabel.text = String(juiceMaker.count(of: .strawberry))
+        self.bananaLabel.text = String(juiceMaker.count(of: .banana))
+        self.pineappleLabel.text = String(juiceMaker.count(of: .pineapple))
+        self.kiwiLabel.text = String(juiceMaker.count(of: .kiwi))
+        self.mangoLabel.text = String(juiceMaker.count(of: .mango))
     }
     
     /// 선택한 쥬스 확인 알림
@@ -69,4 +69,3 @@ extension OrderViewController {
         self.present(alert, animated: false)
     }
 }
-

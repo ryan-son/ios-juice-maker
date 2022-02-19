@@ -44,18 +44,18 @@ struct JuiceMaker: JuiceMakeable {
     }
     
     func make(juice: Juice) -> Result<Juice, JuiceMakerError> {
-        guard fruitStore.hasIngredients(for: juice) else {
+        guard self.fruitStore.hasIngredients(for: juice) else {
             return .failure(.notEnoughIngredients)
         }
-        fruitStore.consume(ingredients: juice.ingredients)
+        self.fruitStore.consume(ingredients: juice.ingredients)
         return .success(juice)
     }
     
     func count(of fruit: Fruit) -> Int {
-        return fruitStore.count(of: fruit)
+        return self.fruitStore.count(of: fruit)
     }
     
     func setAmount(for fruit: Fruit, to amount: Int) {
-        fruitStore.setAmount(for: fruit, to: amount)
+        self.fruitStore.setAmount(for: fruit, to: amount)
     }
 }
