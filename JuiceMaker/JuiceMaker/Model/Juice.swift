@@ -6,13 +6,13 @@
 //
 
 /// 쥬스 종류
-enum Juice {
-    case strawberry
+enum Juice: Int, CustomStringConvertible {
+    case strawberry = 1
     case banana
-    case kiwi
     case pineapple
-    case strawberryBanana
+    case kiwi
     case mango
+    case strawberryBanana
     case mangoKiwi
 }
 
@@ -20,6 +20,20 @@ extension Juice {
     /// 쥬스 종류에 따라 소진될 재료와 수량을 가집니다.
     var ingredients: Fruits {
         return IngredientsDirector.ingredients(for: self)
+    }
+    
+    /// 버튼의 Tag 사용을 위한 rawValue
+    public var description: String {
+        switch self.rawValue {
+        case 1: return "strawberry"
+        case 2: return "banana"
+        case 3: return "pineapple"
+        case 4: return "kiwi"
+        case 5: return "mango"
+        case 6: return "strawberryBanana"
+        case 7: return "mangoKiwi"
+        default: return ""
+        }
     }
 }
 
