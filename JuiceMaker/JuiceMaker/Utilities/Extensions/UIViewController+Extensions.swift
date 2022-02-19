@@ -6,14 +6,22 @@
 //
 import UIKit
 
-extension UIViewController {
-    /// 다음 View로 이동 합니다.
-    /// - identifier : Next ViewController's identifier
-    func present(identifier: String) {
-        guard let viewController = self.storyboard?.instantiateViewController(withIdentifier: identifier) else {
-            return
+protocol StoryboardInstantiatable: AnyObject {
+    static var sceneStoryboard: UIStoryboard { get }
+}
+
+extension StoryboardInstantiatable {
+    static var sceneStoryboard: UIStoryboard {
+        return UIStoryboard(name: String(describing: self), bundle: Bundle(for: self))
+    }
+}
+
+extension StoryboardInstantiatable where Self: UIViewController {
+    static func instantiate() -> Self {
+        let viewController = sceneStoryboard.instantiateInitialViewController()
+        guard let viewController = viewController as? Self else {
+            fatalError()
         }
-        viewController.modalTransitionStyle = .coverVertical
-        self.present(viewController, animated: true)
+        return viewController
     }
 }

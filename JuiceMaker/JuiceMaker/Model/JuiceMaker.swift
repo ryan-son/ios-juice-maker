@@ -9,6 +9,15 @@ enum JuiceMakerError: Error {
     case notEnoughIngredients
 }
 
+extension JuiceMakerError {
+    var message: String {
+        switch self {
+        case .notEnoughIngredients:
+            return "재료가 모자라요. 재고를 수정할까요?"
+        }
+    }
+}
+
 /// 쥬스 메이커 타입
 protocol JuiceMakeable {
     

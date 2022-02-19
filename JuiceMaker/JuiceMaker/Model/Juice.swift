@@ -6,8 +6,8 @@
 //
 
 /// 쥬스 종류
-enum Juice: Int, CustomStringConvertible {
-    case strawberry = 1
+enum Juice {
+    case strawberry
     case banana
     case pineapple
     case kiwi
@@ -21,18 +21,25 @@ extension Juice {
     var ingredients: Fruits {
         return IngredientsDirector.ingredients(for: self)
     }
-    
-    /// 버튼의 Tag 사용을 위한 rawValue
-    public var description: String {
-        switch self.rawValue {
-        case 1: return "strawberry"
-        case 2: return "banana"
-        case 3: return "pineapple"
-        case 4: return "kiwi"
-        case 5: return "mango"
-        case 6: return "strawberryBanana"
-        case 7: return "mangoKiwi"
-        default: return ""
+}
+
+extension Juice: CustomStringConvertible {
+    var description: String {
+        switch self {
+        case .strawberry:
+            return "딸기쥬스"
+        case .banana:
+            return "바나나쥬스"
+        case .pineapple:
+            return "파인애플쥬스"
+        case .kiwi:
+            return "키위쥬스"
+        case .mango:
+            return "망고쥬스"
+        case .strawberryBanana:
+            return "딸바쥬스"
+        case .mangoKiwi:
+            return "망키쥬스"
         }
     }
 }

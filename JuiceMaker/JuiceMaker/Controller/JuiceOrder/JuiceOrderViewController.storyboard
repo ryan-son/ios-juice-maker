@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="k8z-fh-kgc">
+    <device id="retina6_1" orientation="landscape" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--맛있는 쥬스를 만들어 드려요!-->
+        <scene sceneID="Ar0-9k-bYS">
+            <objects>
+                <viewController id="k8z-fh-kgc" customClass="JuiceOrderViewController" customModule="JuiceMaker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CNt-Ph-16J">
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="ZuH-0j-jGl">
+                                <rect key="frame" x="60" y="20" width="776" height="145"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Jkx-L3-0Hy">
+                                        <rect key="frame" x="0.0" y="0.0" width="142.5" height="145"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🍓" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="cxM-1V-fIf">
+                                                <rect key="frame" x="0.0" y="0.0" width="142.5" height="114"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="70"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="mH3-QK-VC1">
+                                                <rect key="frame" x="0.0" y="122" width="142.5" height="23"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Tkc-WT-KBR">
+                                        <rect key="frame" x="158.5" y="0.0" width="142.5" height="145"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🍌" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="rBK-H8-rGA">
+                                                <rect key="frame" x="0.0" y="0.0" width="142.5" height="114"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="70"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="5Tj-e6-x4Z">
+                                                <rect key="frame" x="0.0" y="122" width="142.5" height="23"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="uxS-2y-2CC">
+                                        <rect key="frame" x="317" y="0.0" width="142" height="145"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🍍" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="7OS-ke-Kbz">
+                                                <rect key="frame" x="0.0" y="0.0" width="142" height="114"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="70"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="zFg-gv-9gg">
+                                                <rect key="frame" x="0.0" y="122" width="142" height="23"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="EiC-FD-XL0">
+                                        <rect key="frame" x="475" y="0.0" width="142.5" height="145"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🥝" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="YH2-yM-wEC">
+                                                <rect key="frame" x="0.0" y="0.0" width="142.5" height="114"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="70"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="olK-4Q-lEc">
+                                                <rect key="frame" x="0.0" y="122" width="142.5" height="23"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="CLk-zc-zje">
+                                        <rect key="frame" x="633.5" y="0.0" width="142.5" height="145"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🥭" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="sqp-jF-GVd">
+                                                <rect key="frame" x="0.0" y="0.0" width="142.5" height="114"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="70"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="RF6-Vr-iWD">
+                                                <rect key="frame" x="0.0" y="122" width="142.5" height="23"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="VID-3V-h4H">
+                                <rect key="frame" x="60" y="185" width="776" height="188"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="0b9-UU-ZyG">
+                                        <rect key="frame" x="0.0" y="0.0" width="776" height="90"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GOb-wM-yKJ">
+                                                <rect key="frame" x="0.0" y="0.0" width="301" height="90"/>
+                                                <color key="backgroundColor" name="AccentColor"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                <state key="normal" title="딸바쥬스 주문">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="strawberryBananaJuiceOrderButtonTapped:" destination="k8z-fh-kgc" eventType="touchUpInside" id="Wjd-7w-Eg6"/>
+                                                </connections>
+                                            </button>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kmw-V2-9NP">
+                                                <rect key="frame" x="317" y="0.0" width="142" height="90"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </view>
+                                            <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qx5-M4-pUM">
+                                                <rect key="frame" x="475" y="0.0" width="301" height="90"/>
+                                                <color key="backgroundColor" name="AccentColor"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                <state key="normal" title="망키쥬스 주문">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="mangoKiwiJuiceOrderButtonTapped:" destination="k8z-fh-kgc" eventType="touchUpInside" id="rnY-zG-E9H"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="VxS-SA-nb1">
+                                        <rect key="frame" x="0.0" y="98" width="776" height="90"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="9ha-Rd-IeV">
+                                                <rect key="frame" x="0.0" y="0.0" width="776" height="90"/>
+                                                <subviews>
+                                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jwI-mE-yWE">
+                                                        <rect key="frame" x="0.0" y="0.0" width="142.5" height="90"/>
+                                                        <color key="backgroundColor" name="AccentColor"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                        <state key="normal" title="딸기쥬스 주문">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="strawberryJuiceOrderButtonTapped:" destination="k8z-fh-kgc" eventType="touchUpInside" id="AdP-ue-qiF"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="407-tH-h4B">
+                                                        <rect key="frame" x="158.5" y="0.0" width="142.5" height="90"/>
+                                                        <color key="backgroundColor" name="AccentColor"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                        <state key="normal" title="바나나쥬스 주문">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="bananaJuiceOrderButtonTapped:" destination="k8z-fh-kgc" eventType="touchUpInside" id="XdX-jL-fbs"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="7Tv-mX-gbJ">
+                                                        <rect key="frame" x="317" y="0.0" width="142" height="90"/>
+                                                        <color key="backgroundColor" name="AccentColor"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                        <state key="normal" title="파인애플쥬스 주문">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="pineappleJuiceOrderButtonTapped:" destination="k8z-fh-kgc" eventType="touchUpInside" id="47M-KQ-6Nz"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="afc-a2-5yQ">
+                                                        <rect key="frame" x="475" y="0.0" width="142.5" height="90"/>
+                                                        <color key="backgroundColor" name="AccentColor"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                        <state key="normal" title="키위쥬스 주문">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="kiwiJuiceOrderButtonTapped:" destination="k8z-fh-kgc" eventType="touchUpInside" id="LZL-Z6-3SE"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tM8-Wg-2En">
+                                                        <rect key="frame" x="633.5" y="0.0" width="142.5" height="90"/>
+                                                        <color key="backgroundColor" name="AccentColor"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                        <state key="normal" title="망고쥬스 주문">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="mangoJuiceOrderButtonTapped:" destination="k8z-fh-kgc" eventType="touchUpInside" id="buV-eZ-Lwd"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="407-tH-h4B" firstAttribute="trailing" secondItem="GOb-wM-yKJ" secondAttribute="trailing" id="2DS-69-D25"/>
+                                    <constraint firstItem="Qx5-M4-pUM" firstAttribute="trailing" secondItem="tM8-Wg-2En" secondAttribute="trailing" id="8z6-XR-NYk"/>
+                                    <constraint firstItem="Qx5-M4-pUM" firstAttribute="leading" secondItem="afc-a2-5yQ" secondAttribute="leading" id="bsp-n2-UNq"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="YL2-8x-Iez"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="VID-3V-h4H" firstAttribute="top" secondItem="ZuH-0j-jGl" secondAttribute="bottom" constant="20" id="0JW-QO-pu0"/>
+                            <constraint firstItem="VID-3V-h4H" firstAttribute="leading" secondItem="ZuH-0j-jGl" secondAttribute="leading" id="J0e-T9-pK1"/>
+                            <constraint firstItem="YL2-8x-Iez" firstAttribute="trailing" secondItem="ZuH-0j-jGl" secondAttribute="trailing" constant="16" id="MEJ-wQ-foV"/>
+                            <constraint firstItem="ZuH-0j-jGl" firstAttribute="leading" secondItem="YL2-8x-Iez" secondAttribute="leading" constant="16" id="Mk7-B0-Xal"/>
+                            <constraint firstItem="ZuH-0j-jGl" firstAttribute="height" secondItem="CNt-Ph-16J" secondAttribute="height" multiplier="35%" id="Mm0-Ve-I1X"/>
+                            <constraint firstItem="VID-3V-h4H" firstAttribute="trailing" secondItem="ZuH-0j-jGl" secondAttribute="trailing" id="SeJ-ej-MUb"/>
+                            <constraint firstItem="YL2-8x-Iez" firstAttribute="bottom" secondItem="VID-3V-h4H" secondAttribute="bottom" constant="20" id="V02-Jn-ZHs"/>
+                            <constraint firstItem="GOb-wM-yKJ" firstAttribute="trailing" secondItem="Tkc-WT-KBR" secondAttribute="trailing" id="eSs-dy-fDg"/>
+                            <constraint firstItem="ZuH-0j-jGl" firstAttribute="top" secondItem="YL2-8x-Iez" secondAttribute="top" constant="20" id="rCc-6L-Olh"/>
+                            <constraint firstItem="VxS-SA-nb1" firstAttribute="trailing" secondItem="CLk-zc-zje" secondAttribute="trailing" id="u4X-wj-c4S"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="맛있는 쥬스를 만들어 드려요!" id="lfN-bm-bOW">
+                        <barButtonItem key="rightBarButtonItem" title="재고수정" id="Bc6-ic-0uL"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="bananaLabel" destination="5Tj-e6-x4Z" id="dU2-Cj-KmZ"/>
+                        <outlet property="kiwiLabel" destination="olK-4Q-lEc" id="iQz-ac-19A"/>
+                        <outlet property="mangoLabel" destination="RF6-Vr-iWD" id="feh-aC-IqR"/>
+                        <outlet property="pineappleLabel" destination="zFg-gv-9gg" id="RYW-VS-4TC"/>
+                        <outlet property="strawberryLabel" destination="mH3-QK-VC1" id="TCz-hP-Ub4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7Kj-9i-6yd" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1448" y="113"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
