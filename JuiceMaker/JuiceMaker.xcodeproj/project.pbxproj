@@ -155,13 +155,13 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		C71CD66D266C7B470038B9CB /* Controller */ = {
+		C71CD66D266C7B470038B9CB /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
 				AAAC538227C0B7680078666D /* JuiceOrder */,
 				AAAC538327C0B76F0078666D /* Store */,
 			);
-			path = Controller;
+			path = Presentation;
 			sourceTree = "<group>";
 		};
 		C71CD66F266C7B500038B9CB /* Model */ = {
@@ -207,10 +207,10 @@
 			isa = PBXGroup;
 			children = (
 				AAAC537F27C0B2720078666D /* Application */,
-				AAED943827BD3180007F2A84 /* Utilities */,
-				C71CD66D266C7B470038B9CB /* Controller */,
-				C71CD66F266C7B500038B9CB /* Model */,
 				C71CD671266C7B570038B9CB /* Asset */,
+				C71CD66F266C7B500038B9CB /* Model */,
+				C71CD66D266C7B470038B9CB /* Presentation */,
+				AAED943827BD3180007F2A84 /* Utilities */,
 				C73DAF44255D0CDF00020D38 /* Info.plist */,
 			);
 			path = JuiceMaker;
